@@ -2,10 +2,11 @@ class Pokemon {
     constructor(name, ability, baseStats, level, ivs, evs, nature, rankModifiers, moves, item, types, weight = null, terastalType = null) {
         this.name = name; // 名前
         this.ability = ability; // 特性
-        this.baseStats = baseStats; // 種族値
         this.level = level; // レベル
+        this.baseStats = baseStats; // 種族値
         this.ivs = ivs; // 個体値
         this.evs = evs; // 努力値
+        this.status = null; // 実数値
         this.nature = nature; // 性格
         this.rankModifiers = rankModifiers; // ランク補正
         this.moves = moves; // わざ
@@ -23,9 +24,11 @@ class Pokemon {
         const natureModifier = this.getNatureModifier(statName);
         const level = this.level;
 
-        return Math.floor(
+        const status = Math.floor(
             ((2 * base + iv + Math.floor(ev / 4)) * level) / 100 + 5
         ) * natureModifier;
+        this.status = status;
+        return status;
     }
 
     // Example method to get nature modifier

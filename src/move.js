@@ -1,9 +1,9 @@
 class Move {
-  constructor(name, description, type, level, effect) {
+  constructor(name, type, power, genre, accuracy) {
     this.name = name;
-    this.description = description;
     this.type = type;
-    this.level = level;
-    this.effect = effect;
+    this.power = power;
+    this.genre = genre;
+    this.accuracy = accuracy;
   }
 }

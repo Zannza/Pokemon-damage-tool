@@ -1,4 +1,4 @@
-class Belongings {
+class Items {
     constructor() {
         this.items = [];
     }
