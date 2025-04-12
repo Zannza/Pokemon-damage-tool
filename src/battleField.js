@@ -25,7 +25,7 @@ class BattleField {
         damage = damage / 50 + 2; 
         damage = Math.floor(damage);
         damage = damage * characteristicRate * itemRate * weatherRate * sameBonusRate * typeRate * burnRate * targetRate * wallRate * otherRate;
-        damage = Math.floor(damage);
+        damage = Math.round(damage);
         return damage;
     }
 }
