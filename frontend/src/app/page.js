@@ -10,7 +10,7 @@ export default function Home() {
 
       <form className={styles.form}>
         {/* 攻撃側 */}
-        <fieldset className={styles.section}>
+        <fieldset className={`${styles.section} ${styles.attackSection}`}>
           <legend>攻撃</legend>
           <div className={styles.row}>
             <label>ポケモン名</label>
@@ -20,6 +20,7 @@ export default function Home() {
           </div>
 
           <div className={styles.row}>
+            <label>Attack:</label>
             <label>実数値</label>
             <input className={styles.input} type="number" defaultValue="0" />
             <label>個体値</label>
@@ -52,7 +53,7 @@ export default function Home() {
         </fieldset>
 
         {/* 防御側 */}
-        <fieldset className={styles.section}>
+        <fieldset className={`${styles.section} ${styles.defenseSection}`}>
           <legend>防御</legend>
           <div className={styles.row}>
             <label>ポケモン名</label>
@@ -103,7 +104,7 @@ export default function Home() {
         </fieldset>
 
         {/* その他 */}
-        <fieldset className={styles.section}>
+        <fieldset className={`${styles.section} ${styles.otherSection}`}>
           <legend>Other</legend>
           <div className={styles.row}>
             <label htmlFor="weather">Weather:</label>
