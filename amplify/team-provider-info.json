@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pokemondamagetool-dev-24d67-authRole",
+      "UnauthRoleArn": "arn:aws:iam::615299759786:role/amplify-pokemondamagetool-dev-24d67-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::615299759786:role/amplify-pokemondamagetool-dev-24d67-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-pokemondamagetool-dev-24d67-deployment",
+      "UnauthRoleName": "amplify-pokemondamagetool-dev-24d67-unauthRole",
+      "StackName": "amplify-pokemondamagetool-dev-24d67",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:615299759786:stack/amplify-pokemondamagetool-dev-24d67/9c8d8a90-2346-11f0-bb23-0e70ed360747",
+      "AmplifyAppId": "d2uujle7czz2hu"
+    }
+  }
+}
