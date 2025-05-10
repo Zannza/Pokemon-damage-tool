@@ -45,7 +45,7 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch('https://ysxhwy8tsd.execute-api.ap-northeast-1.amazonaws.com/default/calculateDamage', {
+      const response = await fetch(process.env.NEXT_PUBLIC_API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
